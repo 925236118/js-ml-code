@@ -6,12 +6,12 @@ window.onload = () => {
   const data = getData(400)
 
   tfvis.render.scatterplot(
-    {name: '逻辑回归训练数据'},
+    { name: '逻辑回归训练数据' },
     {
       series: ['1', '0'],
       values: [
-        data.filter( p => p.label === 1),
-        data.filter( p => p.label === 0)
+        data.filter(p => p.label === 1),
+        data.filter(p => p.label === 0)
       ]
     }
   )

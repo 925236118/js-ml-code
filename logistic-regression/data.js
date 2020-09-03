@@ -1,11 +1,11 @@
 export function getData(numSamples) {
   let points = []
 
-  function genGauss (cx, cy, label) {
+  function genGauss(cx, cy, label) {
     for (let i = 0; i < numSamples / 2; i++) {
       let x = normalRandom(cx)
       let y = normalRandom(cy)
-      points.push({x, y, label})
+      points.push({ x, y, label })
     }
   }
 
@@ -20,7 +20,7 @@ export function getData(numSamples) {
  * @param mean The mean. Default is 0.
  * @param variance The variance. Default is 1.
  */
-function normalRandom (mean = 0, variance = 1) {
+function normalRandom(mean = 0, variance = 1) {
   let v1, v2, s
   do {
     v1 = 2 * Math.random() - 1
